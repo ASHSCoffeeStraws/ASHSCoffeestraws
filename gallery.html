@@ -15,26 +15,16 @@
     <nav>
       <ul>
         <li><a href="index.html">HOME</a></li>
-        <li><a href="index2.html">INFO</a></li>
+        <li><a href="index2.html">INFO</li>
         <li><a href="index3.html">CONTACT</a></li>
         <li><a href="gallery.html">GALLERY</a></li>
-        <li class="last"><a href="index5.html"></a>OTHERS</a></li>
+        <li class="last"><a href="index5.html">OTHERS</a></li>
       </ul>
     </nav>
   </header>
 </div>
-
-<!-- content -->
-<div class="wrapper row2">
-  <div id="container" class="clear">
-
-    <!-- main content -->
-    <div id="homepage">	
-      <!-- services area -->
-      <section id="services" class="clear">
-        
- <p align="middle" ><pre>  
-                          ooMMMMMMMooo
+<!--
+                         ooMMMMMMMooo
                        oMMMMMMMMMMMMMMMoo
                       MMMMMMMMMMMMMMo"MMMo
                      "MMMMMMMMMMMMMMMMMMMMM
@@ -73,42 +63,63 @@
         "" M Mo"o"oo"oM"" "               MMoM M M M
                """ """                      " """ "
 $WOLPERTINGER was here....
-</pre></p>
-        <article class="one_quarter">
-          <figure><img src="images/demo/32x32.gif" width="32" height="32" alt=""></figure>
-          <strong>Title 1</strong>
-          <p>Description 1</p>
-          <p class="more"><a href="#">Read More &raquo;</a></p>
-        </article>
-        <article class="one_quarter">
-          <figure><img src="images/demo/32x32.gif" width="32" height="32" alt=""></figure>
-          <strong>Title 2</strong>
-          <p>Description 2</p>
-          <p class="more"><a href="#">Read More &raquo;</a></p>
-        </article>
-        <article class="one_quarter">
-          <figure><img src="images/demo/32x32.gif" width="32" height="32" alt=""></figure>
-          <strong>Title 3</strong>
-          <p>Description 3</p>
-          <p class="more"><a href="#">Read More &raquo;</a></p>
-        </article>
-        <article class="one_quarter lastbox">
-          <figure><img src="images/demo/32x32.gif" width="32" height="32" alt=""></figure>
-          <strong>Title 4</strong>
-          <p>Description 4</p>
-          <p class="more"><a href="#">Read More &raquo;</a></p>
-        </article>
-      </section>
+-->
+<!-- content -->
+
+
+<script language="JavaScript"> 
+var i = 0; var path = new Array(); 
+var swapImageTimeout;
+// LIST OF IMAGES 
+path[0] = "images/coffeeslider.jpg"; 
+path[1] = "images/demo/290x180.gif"; 
+path[2] = "images/coffeeslider.jpg"; 
+
+function swapImage() 
+{ 
+document.slide.src = path[i]; 
+if(i < path.length - 1) i++; 
+else i = 0; 
+swapImageTimeout = setTimeout("swapImage()",3000); 
+}
+
+function setImage(imagePath){
+// Cancel the existing Looping of Image	
+clearTimeout(swapImageTimeout);
+
+
+// Set the Image for the passed in pass
+document.slide.src = path[imagePath]; 
+
+//After 5 seconds restart the Tier swapImage
+setTimeout("swapImage()",6000); 
+
+	
+	
+}
+window.onload=swapImage; 
+</script>
+
+<div class="wrapper row2">
+  <div id="container" class="clear">
+    <!-- Slider -->
+    <section id="slider"><a href="#"><img src="images/coffeeslider.jpg " name="slide" width="100%" height="500" align="middle" /></a></section>
+
+    <!-- main content -->
+    <div id="homepage">	
+      
 
       <section id="latest">
-     
         <article>
           <figure>
             <ul class="clear">
               <li class="one_third"><a href="javascript:setImage(0);"><img src="images/demo/290x180.gif" width="290" height="180" alt=""></a></li>
               <li class="one_third"><a href="javascript:setImage(1);"><img src="images/demo/290x180.gif" width="290" height="180" alt=""></a></li>
               <li class="one_third lastbox"><a href="javascript:setImage(2);"><img src="images/demo/290x180.gif" width="290" height="180" alt=""></a></li>
-              
+              <br>
+              <li class="one_third"><a href="javascript:setImage(1);"><img src="images/demo/290x180.gif" width="290" height="180" alt=""></a></li>
+              <li class="one_third"><a href="javascript:setImage(1);"><img src="images/demo/290x180.gif" width="290" height="180" alt=""></a></li>
+              <li class="one_third lastbox"><a href="javascript:setImage(1);"><img src="images/demo/290x180.gif" width="290" height="180" alt=""></a></li>
             </ul>
             <figcaption><a href="images/coffeeslider.jpg">View More Images &raquo;</a></figcaption>
           </figure>
