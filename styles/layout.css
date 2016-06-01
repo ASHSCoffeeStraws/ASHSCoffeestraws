@@ -28,7 +28,6 @@ q:before{content:'“ '; font-size:26px;}
 q:after{content:' „'; font-size:26px; line-height:0;}
 
 /* ----------------------------------------------Wrapper-------------------------------------*/
-
 div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left; }
 
 .row1, .row1 a{color:#ffffff; background-color:#005d25; text-shadow: 20px px #00000; }
