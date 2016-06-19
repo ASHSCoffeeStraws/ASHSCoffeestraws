@@ -6,6 +6,7 @@
 </head>
 
 <body>
+
 <div class="wrapper row1">
   <header id="header" class="clear">
     <div id="hgroup">
@@ -86,19 +87,20 @@ function swapImage()
 document.slide.src = path[i]; 
 if(i < path.length - 1) i++; 
 else i = 0; 
+clearTimeout(swapImageTimeout);
 swapImageTimeout = setTimeout("swapImage()",3000); 
 }
 
 function setImage(imagePath){
-// Cancel the existing Looping of Image	
+//Cancel the existing Looping of Image	
 clearTimeout(swapImageTimeout);
 
 
 // Set the Image for the passed in pass
 document.slide.src = path[imagePath]; 
 
-//After 5 seconds restart the Tier swapImage
-setTimeout("swapImage()",5000); 
+//After 5 seconds restart the swapImage
+swapImageTimeout = setTimeout("swapImage()",9000); 
 
 	
 	
