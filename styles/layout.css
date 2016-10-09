@@ -41,7 +41,7 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left; }
 
 nav ul{margin:0; padding:0; list-style:none;}
 
-h1, h2, h3, h4, h5, h6{margin:0; padding:0; font-size:16px; font-weight:bold; font-style:normal; line-height:normal; text-transform:uppercase;  text-shadow: 20px px #00000;}
+h1, h2, h3, h4, h5, h6{margin:0; padding:0; font-size:16px; font-weight:bold; font-style:normal; line-height:normal; text-transform:uppercase;  text-shadow: 20px px #00000 text-align: center;}
 
 address{font-style:normal;}
 
@@ -113,7 +113,7 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 
 /* ------Main Content-----*/
 
-#container #content{float:left; width:630px; line-height:1.6em;}
+#container #content{float:left; width:960px; line-height:1.6em;}
 
 #container #content #posts{}
 #container #content #posts ul{margin:0; padding:0; list-style:none;}
@@ -122,7 +122,7 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 #container #content #posts ul li article{}
 #container #content #posts ul li article figure{}
 #container #content #posts ul li article figure img{float:left; width:180px; height:150px; margin:0; padding:4px; border:1px solid #000000;}
-#container #content #posts ul li article figure figcaption{display:block; float:right; width:410px;}
+#container #content #posts ul li article figure figcaption{display:block; float:right; width:600px;}
 #container #content #posts ul li article figure h2{font-size:14px;}
 #container #content #posts ul li article figure footer{}
 
