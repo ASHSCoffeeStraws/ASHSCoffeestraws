@@ -1,0 +1,33 @@
+@charset "utf-8";
+/----------------------------------------------Header-------------------------------------/
+
+#header{padding:1px 0 ; margin-left:25px;}
+
+
+#header nav{display:block; float:center; margin:inherit; padding:inherit; 0; color:#ffffff; background-color:#004125;}
+#header nav ul{padding:0 20px; margin-right:25;}
+#header nav li{display:inline; margin-right:25px; text-transform:uppercase;}
+#header nav li.last{margin-right:0;}
+#header nav li a{color:#ffffff; background-color:#004125;}
+#header nav li a:hover{color:#ffffff; background-color:#005d25;}
+ 
+/--------------------------------------Img------------------------------------------------/
+img{margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;}
+.imgholder, .imgl, .imgr{padding:4px; border:1px solid #D6D6D6; text-align:center;}
+
+/--------------------------------------Wrapper--------------------------------------------/
+
+div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left; }
+
+.row1, .row1 a{color:#ffffff; background-color:#005d25; text-shadow: 20px px #00000; }
+.row2{color:#000000; background-color:#FFFFFF; text-shadow: 20px px #00000;}
+.row2 a{color:#000000; background-color:#FFFFFF; text-shadow: 20px px #00000;}
+.row3, .row3 a{color:#ffffff; background-color:#005d25; text-shadow: 20px px #00000;}
+
+
+
+/----------------------------------------------Footer-------------------------------------/
+
+#footer{padding:20px 20px 20px 20px; color:#ffffff;}
+#footer p{margin:0; padding:0; color:#ffffff;}/* CSS Document */
+
