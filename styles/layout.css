@@ -92,6 +92,17 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 /* ------Slider-----*/
 
 #container #slider{margin-bottom:50px;}
+.slider img {
+	height:660px;
+}
+.squadimage img {
+	width: 960px;
+	height: 400px;
+}
+.infoimage img{
+	width: 960px;
+	height: 400px;
+}
 
 /* ------Homepage-----*/
 

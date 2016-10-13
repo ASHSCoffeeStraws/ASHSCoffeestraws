@@ -2,7 +2,9 @@
 /----------------------------------------------Header-------------------------------------/
 
 #header{padding:1px 0 ; margin-left:25px;}
-
+.h2 {
+    text-s
+}
 
 #header nav{display:block; float:center; margin:inherit; padding:inherit; 0; color:#ffffff; background-color:#004125;}
 #header nav ul{padding:10px 10px; margin-left:25;margin-right :25;}
@@ -29,6 +31,17 @@ img{margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;
     left:0;
     width:100%;
     height:100%;
+}
+.slider img{
+	height:300px;
+}
+.squadimage img{
+	width:100%;
+	height:auto
+}
+.infoimage img{
+	width: 100%;
+	height: auto;
 }
 
 
